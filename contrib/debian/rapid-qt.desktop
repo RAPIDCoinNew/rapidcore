@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Rapid
+Comment=Rapid P2P Cryptocurrency
+Comment[fr]=Rapid, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Rapid, eşten eşe kriptografik sanal para birimi
+Exec=rapid-qt %u
+Terminal=false
+Type=Application
+Icon=rapid128
+MimeType=x-scheme-handler/rapid;
+Categories=Office;Finance;

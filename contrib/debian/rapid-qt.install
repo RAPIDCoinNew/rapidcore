@@ -1,0 +1,6 @@
+usr/local/bin/rapid-qt usr/bin
+share/pixmaps/rapid32.xpm usr/share/pixmaps
+share/pixmaps/rapid16.xpm usr/share/pixmaps
+share/pixmaps/rapid128.png usr/share/pixmaps
+debian/rapid-qt.desktop usr/share/applications
+debian/rapid-qt.protocol usr/share/kde4/services/

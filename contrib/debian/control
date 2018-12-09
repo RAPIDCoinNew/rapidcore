@@ -1,0 +1,68 @@
+Source: rapid
+Section: utils
+Priority: optional
+Maintainer: Holger Schinzel <holger@rapid.org>
+Uploaders: Holger Schinzel <holger@rapid.org>
+Build-Depends: debhelper,
+ devscripts,
+ automake,
+ libtool,
+ bash-completion,
+ libdb4.8++-dev,
+ libssl-dev,
+ pkg-config,
+ libevent-dev,
+ libboost-system1.48-dev | libboost-system-dev (>> 1.35),
+ libboost-filesystem1.48-dev | libboost-filesystem-dev (>> 1.35),
+ libboost-program-options1.48-dev | libboost-program-options-dev (>> 1.35),
+ libboost-thread1.48-dev | libboost-thread-dev (>> 1.35),
+ libboost-test1.48-dev | libboost-test-dev (>> 1.35),
+ libboost-chrono1.48-dev | libboost-chrono-dev (>> 1.35),
+ qt4-qmake,
+ libqt4-dev,
+ libqrencode-dev,
+ libprotobuf-dev, protobuf-compiler,
+ python
+Standards-Version: 3.9.2
+Homepage: https://www.rapid.org/
+Vcs-Git: git://github.com/rapidpay/rapid.git
+Vcs-Browser: https://github.com/rapidpay/rapid
+
+Package: rapidd
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: peer-to-peer network based digital currency - daemon
+ Rapid is an experimental new digital currency that enables anonymous, instant
+ payments to anyone, anywhere in the world. Rapid uses peer-to-peer
+ technology to operate with no central authority: managing transactions
+ and issuing money are carried out collectively by the network. Rapid Core
+ is the name of the open source software which enables the use of this currency.
+ .
+ This package provides the daemon, rapidd, and the CLI tool
+ rapid-cli to interact with the daemon.
+
+Package: rapid-qt
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: peer-to-peer network based digital currency - Qt GUI
+ Rapid is an experimental new digital currency that enables anonymous, instant
+ payments to anyone, anywhere in the world. Rapid uses peer-to-peer
+ technology to operate with no central authority: managing transactions
+ and issuing money are carried out collectively by the network. Rapid Core
+ is the name of the open source software which enables the use of this currency.
+ .
+ This package provides Rapid-Qt, a GUI for Rapid based on Qt.
+
+Package: rapid-tx
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: peer-to-peer digital currency - standalone transaction tool
+ Rapid is an experimental new digital currency that enables anonymous, instant
+ payments to anyone, anywhere in the world. Rapid uses peer-to-peer
+ technology to operate with no central authority: managing transactions
+ and issuing money are carried out collectively by the network. Rapid Core
+ is the name of the open source software which enables the use of this currency.
+ .
+ This package provides rapid-tx, a command-line transaction creation
+ tool which can be used without a rapid daemon.  Some means of
+ exchanging minimal transaction data with peers is still required.

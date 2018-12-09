@@ -1,0 +1,20 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="bg">locale/rapid_bg.qm</file>
+        <file alias="de">locale/rapid_de.qm</file>
+        <file alias="en">locale/rapid_en.qm</file>
+        <file alias="es">locale/rapid_es.qm</file>
+        <file alias="fi">locale/rapid_fi.qm</file>
+        <file alias="fr">locale/rapid_fr.qm</file>
+        <file alias="it">locale/rapid_it.qm</file>
+        <file alias="ja">locale/rapid_ja.qm</file>
+        <file alias="pl">locale/rapid_pl.qm</file>
+        <file alias="pt">locale/rapid_pt.qm</file>
+        <file alias="ru">locale/rapid_ru.qm</file>
+        <file alias="sk">locale/rapid_sk.qm</file>
+        <file alias="sv">locale/rapid_sv.qm</file>
+        <file alias="vi">locale/rapid_vi.qm</file>
+        <file alias="zh_CN">locale/rapid_zh_CN.qm</file>
+        <file alias="zh_TW">locale/rapid_zh_TW.qm</file>
+    </qresource>
+</RCC>
