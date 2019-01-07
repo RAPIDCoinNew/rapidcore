@@ -1235,8 +1235,7 @@ CAmount GetBlockSubsidy(int nPrevBits, int nPrevHeight, const Consensus::Params&
     int nSubsidyBase = 0;
     if (nHeight == 0) {
         nSubsidyBase = 15000000;
-	}
-	else if (nHeight <= 100000) {
+    } else if (nHeight <= 100000) {
 		nSubsidyBase = 750;
     } else if (nHeight <= 150000) {
         nSubsidyBase = 550;
@@ -1244,10 +1243,10 @@ CAmount GetBlockSubsidy(int nPrevBits, int nPrevHeight, const Consensus::Params&
         nSubsidyBase = 400;
     } else if (nHeight <= 1450000) {
         nSubsidyBase = 250;
-	} else if (nHeight <= 2000000) {
-		nSubsidyBase = 100;
-	} else if (nHeight <= 2450000) {
-		nSubsidyBase = 72.5;
+    } else if (nHeight <= 2000000) {
+	nSubsidyBase = 100;
+    } else if (nHeight <= 2450000) {
+	nSubsidyBase = 72.5;
     } else if (nHeight <= 2900000) {
         nSubsidyBase = 45;
     } else{
@@ -1255,7 +1254,7 @@ CAmount GetBlockSubsidy(int nPrevBits, int nPrevHeight, const Consensus::Params&
     }
 
     CAmount nSubsidy = nSubsidyBase * COIN;
-    CAmount nSuperblockPart = (nPrevHeight > consensusParams.nBudgetPaymentsStartBlock) ? nSubsidy/10 * COIN : 0;
+    CAmount nSuperblockPart = (nPrevHeight > consensusParams.nBudgetPaymentsStartBlock) ? 150 * COIN : 0;
     
     return fSuperblockPartOnly ? nSuperblockPart : nSubsidy - nSuperblockPart; 
 }
@@ -1265,12 +1264,12 @@ CAmount GetMasternodePayment(int nHeight, CAmount blockValue)
     CAmount ret = 0; 
 
     if(nHeight > 100)      ret = 500;
-	if(nHeight >= 100000)  ret = 330;
-	if(nHeight >= 150000)  ret = 240;
+    if(nHeight >= 100000)  ret = 330;
+    if(nHeight >= 150000)  ret = 240;
     if(nHeight >= 750000)  ret = 150; 
     if(nHeight >= 1450000) ret = 60; 
-    if(nHeight >= 2000000) ret = 43,5;
-	if(nHeight >= 2450000) ret = 27;
+    if(nHeight >= 2000000) ret = 43.5;
+    if(nHeight >= 2450000) ret = 27;
     if(nHeight >= 2900000) ret = 10.5; 
 
     ret *= COIN;
