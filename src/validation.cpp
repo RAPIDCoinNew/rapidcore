@@ -1238,19 +1238,19 @@ CAmount GetBlockSubsidy(int nPrevBits, int nPrevHeight, const Consensus::Params&
     } else if (nHeight <= 100000) {
 		nSubsidyBase = 750;
     } else if (nHeight <= 150000) {
-        nSubsidyBase = 550;
+		nSubsidyBase = 645;
     } else if (nHeight <= 750000) {
-        nSubsidyBase = 400;
+		nSubsidyBase = 510;
     } else if (nHeight <= 1450000) {
-        nSubsidyBase = 250;
+		nSubsidyBase = 375;
     } else if (nHeight <= 2000000) {
-	nSubsidyBase = 100;
+		nSubsidyBase = 240;
     } else if (nHeight <= 2450000) {
-	nSubsidyBase = 72.5;
+		nSubsidyBase = 215.25;
     } else if (nHeight <= 2900000) {
-        nSubsidyBase = 45;
+        nSubsidyBase = 190.5;
     } else{
-        nSubsidyBase = 17.5;
+        nSubsidyBase = 165.75;
     }
 
     CAmount nSubsidy = nSubsidyBase * COIN;
